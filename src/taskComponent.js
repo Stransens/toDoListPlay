@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 
 export default function TaskComponent(props) {
-      const [checked, setCheck] = useState(props.task.isDone)
+      // let customId = props.task.text + '_' + Math.random();
       return (
-          <div>
-                <input type='checkbox' defaultChecked={checked} onChange={() => { setCheck(!checked); props.changeStatus(!checked)}}/>
+          <label className='task-line' htmlFor={props.id}>
+                <input id={props.id} type='checkbox' defaultChecked={props.task.isDone} onChange={() => {props.changeStatus(props.task)}}/>
                 <span>{props.task.text}</span>
-                <span>{props.task.label}</span>
-          </div>
+                <span className={props.task.label.toLowerCase() + ' label'}>{props.task.label}</span>
+          </label>
       )
 }

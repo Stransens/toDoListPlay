@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  margin: 20px;
 }
 
 .App-logo {
@@ -35,4 +35,70 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.controls-line {
+  display: flex;
+  align-items: center;
+}
+.filters-line, .controls-line {
+  margin: 20px 0;
+}
+
+.button, .label {
+  font-size: 16px;
+  padding: 3px 6px;
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  margin: 0 10px;
+}
+
+.button.active {
+  background: #808080;
+}
+
+.work {
+  background: #cd5d5b;
+}
+
+.family {
+  background: #8ebd8f;
+}
+
+.personal {
+  background: #6495ec;
+}
+
+.add {
+  background: #008000;
+}
+
+.task-line {
+  margin: 10px 0;
+}
+
+label {
+  display: block;
+}
+
+.task-line input {
+  margin: 0 10px;
+}
+
+.error {
+  font-style: italic;
+  color: tomato;
+  font-size: 12px;
+}
+
+
+
+.task-line span {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.task-line input {
+  margin-right: 10px;
 }
